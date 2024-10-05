@@ -40,7 +40,13 @@ Filebeat следует сконфигурировать для отправки
 Результатом выполнения задания должны быть:
 
 - скриншот `docker ps` через 5 минут после старта всех контейнеров (их должно быть 5);
+
+![изображение](https://github.com/stepynin-georgy/hw_mon_3/blob/main/img/Screenshot_195.png)
+
 - скриншот интерфейса kibana;
+
+![изображение](https://github.com/stepynin-georgy/hw_mon_3/blob/main/img/Screenshot_196.png)
+
 - docker-compose манифест (если вы не использовали директорию help);
 - ваши yml-конфигурации для стека (если вы не использовали директорию help).
 
@@ -52,6 +58,14 @@ Filebeat следует сконфигурировать для отправки
 
 В манифесте директории help также приведенно dummy-приложение, которое генерирует рандомные события в stdout-контейнера.
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
+
+* В Kibana создал index-pattern с именем logstash-*.
+
+![изображение](https://github.com/stepynin-georgy/hw_mon_3/blob/main/img/Screenshot_197.png)
+
+* Python приложение записываются данные в индекс logstash. Эти данные можно увидеть в Discover:
+
+![изображение](https://github.com/stepynin-georgy/hw_mon_3/blob/main/img/Screenshot_198.png)
  
 ---
 
